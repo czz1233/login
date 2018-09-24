@@ -1,8 +1,25 @@
 package com.chen.bean;
 
-public class user {
+public class User {
 	private String name;
 	private String password;
+	private Integer id;
+	
+	public User(String userName, String passWord, Integer id) {
+		this.name = userName;
+		this.password = passWord;
+		this.id = id;
+	}
+	
+	public User() {
+	}
+
+	public int getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
